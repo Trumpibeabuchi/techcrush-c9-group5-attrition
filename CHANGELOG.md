@@ -4,6 +4,16 @@ Changes made to the team notebook after it was copied from the team leader's Col
 (`EMPLOYEE ATTRITION PREDICTION .ipynb`, last edited 2026-11-24) into this repository.
 Newest first.
 
+## 2026-11-25: Simple version of the notebook
+
+- New `notebooks/EMPLOYEE_ATTRITION_PREDICTION_simple.ipynb`: same sections 1–3, with
+  a simpler EDA (section 4) for easier reading. The full version is unchanged.
+- Plain-language findings ("Supported. … For HR: …"), questions as headings
+  (e.g. "Do people who work overtime leave more?"), and one test explained in plain
+  words ("real difference" / "could be chance") instead of p-value jargon.
+- Fewer charts (no density histogram, big heatmap or correlated-pairs table);
+  charts saved as `figures/simple_*.png`.
+
 ## 2026-11-25: EDA completed (H2–H7, correlation, scorecard): findings drafted for review
 
 - 4.3 H2 pay: income of leavers vs stayers, attrition by job level, and pay gap

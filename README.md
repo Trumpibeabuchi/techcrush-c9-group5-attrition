@@ -36,7 +36,8 @@ Which employees are likely to leave, and what is linked to leaving?
 ## 5. Repository structure
 ```
 data/        raw dataset (CSV)
-notebooks/   EMPLOYEE_ATTRITION_PREDICTION.ipynb
+notebooks/   EMPLOYEE_ATTRITION_PREDICTION.ipynb          full analysis
+             EMPLOYEE_ATTRITION_PREDICTION_simple.ipynb   same analysis, simpler EDA and plain-language findings
 figures/     charts exported by the notebook, used in the report and slides
 requirements.txt
 ```
