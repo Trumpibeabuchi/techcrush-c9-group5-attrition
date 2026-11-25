@@ -4,6 +4,17 @@ Changes made to the team notebook after it was copied from the team leader's Col
 (`EMPLOYEE ATTRITION PREDICTION .ipynb`, last edited 2026-11-24) into this repository.
 Newest first.
 
+## 2026-11-25: EDA organised by hypothesis; 4.1 reworked
+
+- Section 4 intro: replaced the 10-item list with an outline organised by the
+  hypotheses (4.1 baseline, 4.2–4.8 = H1–H7, 4.9 correlation, 4.10 scorecard). All
+  items from the original list are kept, grouped under the hypothesis they test;
+  job role, work-life balance and education are added to complete H4, H6 and H7.
+- 4.1: one table with counts **and** percentages (was two separate prints); bars
+  labelled with count and %; finding added (16.1% baseline, class imbalance →
+  judge models on precision/recall/F1). Removed the stand-alone "Visualisation" heading.
+- The two age charts are moved under 4.4 (H3: tenure and age), marked as work in progress.
+
 ## 2026-11-25: Restructured sections 1–3
 
 - Every subsection now follows one pattern: a one-sentence intro (what we check and
