@@ -4,6 +4,14 @@ Changes made to the team notebook after it was copied from the team leader's Col
 (`EMPLOYEE ATTRITION PREDICTION .ipynb`, last edited 2026-11-24) into this repository.
 Newest first.
 
+## 2026-11-25: Edits to the data-quality findings (Trump)
+
+- 3.3 finding rewritten as a numbered list, with the units statement as a separate **NOTE**.
+- 3.4 finding shortened to the constant columns only.
+- 3.5 and 3.6: "Pay analysis (H2) uses `MonthlyIncome` only" broadened to "EDA will
+  use `MonthlyIncome` only".
+- Removed the "Open in Colab" badge cell at the top (the badge stays in the README).
+
 ## 2026-11-25: EDA organised by hypothesis; 4.1 reworked
 
 - Section 4 intro: replaced the 10-item list with an outline organised by the
