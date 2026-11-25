@@ -56,7 +56,8 @@ TBD — table comparing models; top factors chart.
 TBD — at least 3, written for HR managers, each linked to a confirmed hypothesis.
 
 ## 10. Limitations
-TBD (e.g. fictional data, small number of leavers, associations not causes).
+- **Units are not documented, and the data is fictional, so results are compared in relative terms.** No currency is given for income and no unit for distance from home, so findings are stated as percentages or ratios (e.g. "leavers earn X% less"), never in dollars.
+- TBD (e.g. small number of leavers, associations not causes).
 
 ## 11. Links and sources
 - Medium report: <link>
