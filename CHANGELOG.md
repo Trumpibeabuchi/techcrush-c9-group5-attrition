@@ -4,6 +4,29 @@ Changes made to the team notebook after it was copied from the team leader's Col
 (`EMPLOYEE ATTRITION PREDICTION .ipynb`, last edited 2026-11-24) into this repository.
 Newest first.
 
+## 2026-11-25: Restructured sections 1–3
+
+- Every subsection now follows one pattern: a one-sentence intro (what we check and
+  why), the code, then a **Finding**.
+- Section 2 (Data Loading) now only loads and describes the data. `df.info()` and the
+  two `describe()` cells moved to section 3, where they belong.
+- Section 3 is split into 3.1 types and missing values, 3.2 duplicates, 3.3 value
+  ranges and categories, 3.4 constant and ID columns, 3.5 which column measures pay,
+  and 3.6 summary and cleaning decisions.
+- **Duplicate check fixed:** `df.duplicated()` could never find duplicates because
+  every row has a unique `EmployeeNumber`; the check now ignores the ID.
+- Removed the 35-row `nunique()` table (its useful parts are covered by the
+  constant-columns check and `describe(include="object")`).
+- Added category listing and a year-consistency check (3.3) to rule out disguised
+  missing values and impossible values.
+- **New 3.5:** correlation heatmap showing that only `MonthlyIncome` behaves like pay
+  (0.95 with `JobLevel`); the three Rate columns relate to nothing. H2 will use
+  `MonthlyIncome` only.
+- **Cleaning:** `EmployeeCount`, `Over18`, `StandardHours` (constant) and
+  `EmployeeNumber` (ID) are dropped; the result is `df_clean` (1,470 × 31), used from
+  section 4 onwards.
+- Replaced the outdated findings text with a summary table (3.6).
+
 ## 2026-11-25: Removed repeated overview cells
 
 - Removed the column-name list: `df.info()` lists every column with its type and
