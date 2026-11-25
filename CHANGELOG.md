@@ -4,6 +4,14 @@ Changes made to the team notebook after it was copied from the team leader's Col
 (`EMPLOYEE ATTRITION PREDICTION .ipynb`, last edited 2026-11-24) into this repository.
 Newest first.
 
+## 2026-11-25: EDA method and H1 (overtime)
+
+- Added "How each hypothesis is tested" with shared helper functions (attrition-rate
+  table, rate bar chart with the 16.1% baseline, chi-square and Mann-Whitney tests).
+  The EDA works on `eda_df`, a copy of `df_clean`.
+- 4.2 H1: overtime workers leave at 30.5% vs 10.4% (about 3×, p < 0.001): supported.
+  Finding written by Trump.
+
 ## 2026-11-25: Edits to the data-quality findings (Trump)
 
 - 3.3 finding rewritten as a numbered list, with the units statement as a separate **NOTE**.
