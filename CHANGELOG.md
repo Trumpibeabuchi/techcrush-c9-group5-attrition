@@ -4,6 +4,16 @@ Changes made to the team notebook after it was copied from the team leader's Col
 (`EMPLOYEE ATTRITION PREDICTION .ipynb`, last edited 2026-11-24) into this repository.
 Newest first.
 
+## 2026-11-25: Removed repeated overview cells
+
+- Removed the column-name list: `df.info()` lists every column with its type and
+  non-null count.
+- Replaced the two-print dimensions cell with one readable sentence
+  ("The dataset has 1,470 rows (employees) and 35 columns.").
+- Replaced the 35-row missing-values table with a one-line total
+  (`df.isnull().sum().sum()` → 0), because `df.info()` already shows 1,470 non-null
+  values in every column.
+
 ## 2026-11-25: Shorter notebook introduction
 
 - Replaced the long introduction (old sections 1–7: introduction, problem statement,
