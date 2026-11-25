@@ -4,6 +4,22 @@ Changes made to the team notebook after it was copied from the team leader's Col
 (`EMPLOYEE ATTRITION PREDICTION .ipynb`, last edited 2026-11-24) into this repository.
 Newest first.
 
+## 2026-11-25: EDA completed (H2–H7, correlation, scorecard): findings drafted for review
+
+- 4.3 H2 pay: income of leavers vs stayers, attrition by job level, and pay gap
+  **within** each job level (in %). Partly supported: the overall gap mostly reflects
+  seniority; only at level 1 do leavers earn clearly less.
+- 4.4 H3 tenure and age (tenure and age bands; the original age charts kept as context): supported.
+- 4.5 H4 satisfaction (4 scales): supported, effect concentrated at score 1.
+- 4.6 H5 travel: supported. 4.7 H6 job role (+ department): supported.
+- 4.8 H7 gender and education (control): no effect, as expected.
+- 4.9 correlation overview, with strongly correlated column pairs flagged for modelling.
+- 4.10 scorecard and the three themes (early-career risk, workload, dissatisfaction).
+- Chart legends moved outside the plot so they never cover bar labels; income
+  histogram shows "% of group" instead of density.
+- README hypothesis table filled in.
+- Findings H2–H7 were drafted by Claude for Trump to review.
+
 ## 2026-11-25: EDA method and H1 (overtime)
 
 - Added "How each hypothesis is tested" with shared helper functions (attrition-rate

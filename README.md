@@ -11,13 +11,13 @@ Which employees are likely to leave, and what is linked to leaving?
 ## 2. Hypotheses (written before analysis)
 | # | Hypothesis | Result |
 |---|---|---|
-| H1 | Employees who work overtime leave more | TBD |
-| H2 | Lower monthly income is linked to more leaving | TBD |
-| H3 | Employees in their first 2 years, and younger staff, leave more | TBD |
-| H4 | Low satisfaction / poor work-life balance is linked to more leaving | TBD |
-| H5 | Frequent business travel is linked to more leaving | TBD |
-| H6 | Attrition differs strongly by job role | TBD |
-| H7 | Gender and education make little difference (control) | TBD |
+| H1 | Employees who work overtime leave more | **Supported**: 30.5% vs 10.4%, about 3× |
+| H2 | Lower monthly income is linked to more leaving | **Partly supported**: gap mostly reflects seniority; within level 1, leavers earn ~10% less |
+| H3 | Employees in their first 2 years, and younger staff, leave more | **Supported**: 0–2 years 29.8%, age 18–25 35.8% |
+| H4 | Low satisfaction / poor work-life balance is linked to more leaving | **Supported**: mainly at the lowest score (up to 31.2%) |
+| H5 | Frequent business travel is linked to more leaving | **Supported**: 24.9% vs 8.0% for non-travel |
+| H6 | Attrition differs strongly by job role | **Supported**: Sales Representatives 39.8% vs Research Directors 2.5% |
+| H7 | Gender and education make little difference (control) | **Supported**: no significant difference |
 
 ## 3. Dataset
 - **Source:** [IBM HR Analytics Employee Attrition & Performance](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset) (Kaggle)
