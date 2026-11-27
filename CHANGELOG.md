@@ -4,6 +4,28 @@ Changes made to the team notebook after it was copied from the team leader's Col
 (`EMPLOYEE ATTRITION PREDICTION .ipynb`, last edited 2026-11-24) into this repository.
 Newest first.
 
+## 2026-11-27: Review fixes
+
+- **One notebook again:** the simple notebook and its 15 `simple_*.png` charts moved to
+  `To_Delete/`. The full notebook keeps its code; its findings are rewritten in the
+  simple style ("Finding (Hx): supported. … For HR: …"), 3–4 lines each, with the
+  detail left for the report.
+- **Repeated charts removed** (moved to `To_Delete/figures/`): the age histogram and
+  the age boxplot (covered by the age-band chart and the Mann-Whitney test), and the
+  full 27×27 correlation heatmap (unreadable; the correlated-pairs table says what
+  matters). The correlation matrix is still computed for the remaining 4.9 cells.
+- **H6:** new role-profile table showing the evidence behind two claims: overtime is
+  24–33% in every role, and 76 of 83 Sales Representatives are at job level 1.
+- **H7:** "Supported" reworded to "No difference found, as expected" (notebook and README).
+- **4.10:** one line on running 14 tests at the 5% level.
+- **Setup:** removed `warnings.filterwarnings("ignore")`. This surfaced a pandas 3
+  deprecation (`include="object"`), fixed with `exclude="number"` in 3.3. `FIG_DIR`
+  now points to the repository's `figures/` folder whether Jupyter starts in the root
+  or in `notebooks/`.
+- **README:** Method describes the data-quality checks and EDA only; Results,
+  Recommendations and Limitations filled in from the EDA.
+- Executed from `notebooks/` from start to finish: no errors, no warnings.
+
 ## 2026-11-25: Simple version of the notebook
 
 - New `notebooks/EMPLOYEE_ATTRITION_PREDICTION_simple.ipynb`: same sections 1–3, with

@@ -17,7 +17,7 @@ Which employees are likely to leave, and what is linked to leaving?
 | H4 | Low satisfaction / poor work-life balance is linked to more leaving | **Supported**: mainly at the lowest score (up to 31.2%) |
 | H5 | Frequent business travel is linked to more leaving | **Supported**: 24.9% vs 8.0% for non-travel |
 | H6 | Attrition differs strongly by job role | **Supported**: Sales Representatives 39.8% vs Research Directors 2.5% |
-| H7 | Gender and education make little difference (control) | **Supported**: no significant difference |
+| H7 | Gender and education make little difference (control) | **No difference found, as expected** |
 
 ## 3. Dataset
 - **Source:** [IBM HR Analytics Employee Attrition & Performance](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset) (Kaggle)
@@ -36,9 +36,9 @@ Which employees are likely to leave, and what is linked to leaving?
 ## 5. Repository structure
 ```
 data/        raw dataset (CSV)
-notebooks/   EMPLOYEE_ATTRITION_PREDICTION.ipynb          full analysis
-             EMPLOYEE_ATTRITION_PREDICTION_simple.ipynb   same analysis, simpler EDA and plain-language findings
+notebooks/   EMPLOYEE_ATTRITION_PREDICTION.ipynb   the analysis
 figures/     charts exported by the notebook, used in the report and slides
+To_Delete/   superseded files, kept until the team confirms they can be removed
 requirements.txt
 ```
 
@@ -48,17 +48,30 @@ requirements.txt
 3. Local alternative: `pip install -r requirements.txt`, then open the notebook in Jupyter and run all cells from the repository root.
 
 ## 7. Method
-Train/test split (80/20, stratified) · 5-fold cross-validation · Logistic Regression vs Random Forest · metrics: precision, recall, F1, confusion matrix, ROC-AUC (accuracy alone is misleading with only 16% leavers).
+1. **Data quality:** missing values, duplicates (ignoring the ID), value ranges and categories, constant columns, and which column measures pay. Four columns are dropped (three constant, one ID).
+2. **Exploratory analysis, one hypothesis at a time:** each group's **attrition rate** (% who left) is compared with the overall 16.1%. A chi-square test (categories) or Mann-Whitney U test (numbers) checks whether a difference could be chance (p < 0.05).
 
 ## 8. Results
-TBD — table comparing models; top factors chart.
+From the exploratory analysis (details in the hypothesis table above and in the notebook, section 4.10). Leaving is concentrated in three groups:
+1. **Early career:** employees in their first 2 years (29.8% left), aged 18–25 (35.8%) or at job level 1 (26.3%), often Sales Representatives (39.8%) or Laboratory Technicians (23.9%).
+2. **Workload:** overtime (30.5% vs 10.4%) and frequent travel (24.9% vs 8.0%), each about 3 times the rate.
+3. **Dissatisfaction:** a bottom score (1) on job satisfaction, environment or work-life balance (22.8–31.2%).
+
+Pay matters mainly at entry level. Gender and education make no difference.
 
 ## 9. Recommendations
-TBD — at least 3, written for HR managers, each linked to a confirmed hypothesis.
+From the exploratory analysis, for HR managers:
+1. **Focus on the first two years** (H3, H6): onboarding, mentoring and early career conversations, starting with Sales Representatives and Laboratory Technicians.
+2. **Manage workload** (H1, H5): monitor regular overtime and spread business travel more evenly.
+3. **Act on low survey scores** (H4): follow up quickly with anyone who scores 1 on job satisfaction, environment or work-life balance.
+4. **Review entry-level pay and promotion, not pay across the board** (H2).
 
 ## 10. Limitations
 - **Units are not documented, and the data is fictional, so results are compared in relative terms.** No currency is given for income and no unit for distance from home, so findings are stated as percentages or ratios (e.g. "leavers earn X% less"), never in dollars.
-- TBD (e.g. small number of leavers, associations not causes).
+- **Associations, not causes.** For example, overtime goes with leaving, but the data cannot show that overtime causes it.
+- **A snapshot, not a rate over time.** The 16.1% is the share of leavers in the data, not an annual turnover rate.
+- **Some groups are small.** For example, only 5 leavers at job level 4, 52 HR staff and 80 employees with work-life balance 1, so those figures are less reliable.
+- **Many tests.** 14 tests were run at the 5% level, so about one could look significant by chance; every result relied on has p below 0.001 (department: 0.0045).
 
 ## 11. Links and sources
 - Medium report: <link>
