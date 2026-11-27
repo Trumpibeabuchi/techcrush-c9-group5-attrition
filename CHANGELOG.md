@@ -4,6 +4,15 @@ Changes made to the team notebook after it was copied from the team leader's Col
 (`EMPLOYEE ATTRITION PREDICTION .ipynb`, last edited 2026-11-24) into this repository.
 Newest first.
 
+## 2026-11-27: Modelling removed from the EDA notebook
+
+- The modelling will be added by the modelling owner. Removed: the scikit-learn and
+  joblib imports (setup now imports only pandas, numpy, matplotlib, seaborn and scipy),
+  and `scikit-learn` / `joblib` from `requirements.txt`.
+- Removed modelling advice from the text (4.1 accuracy/recall note, 4.9 Logistic
+  Regression vs Random Forest note, "flag for modelling" in 3.6). The EDA facts stay:
+  the 16.1% baseline and the table of overlapping columns.
+
 ## 2026-11-27: Review fixes
 
 - **One notebook again:** the simple notebook and its 15 `simple_*.png` charts moved to
