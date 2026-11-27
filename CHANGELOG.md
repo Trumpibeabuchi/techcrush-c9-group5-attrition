@@ -6,12 +6,12 @@ Newest first.
 
 ## 2026-11-27: Modelling removed from the EDA notebook
 
-- The modelling will be added by the modelling owner. Removed: the scikit-learn and
-  joblib imports (setup now imports only pandas, numpy, matplotlib, seaborn and scipy),
-  and `scikit-learn` / `joblib` from `requirements.txt`.
-- Removed modelling advice from the text (4.1 accuracy/recall note, 4.9 Logistic
-  Regression vs Random Forest note, "flag for modelling" in 3.6). The EDA facts stay:
-  the 16.1% baseline and the table of overlapping columns.
+- The modelling will be added by the modelling owner. This repository contains the
+  data-quality checks and the EDA only.
+- Setup now imports only pandas, numpy, matplotlib, seaborn and scipy;
+  `requirements.txt` lists only these.
+- Removed all text about models from the notebooks and this changelog. The EDA facts
+  stay: the 16.1% baseline and the table of overlapping columns.
 
 ## 2026-11-27: Review fixes
 
@@ -54,7 +54,7 @@ Newest first.
 - 4.5 H4 satisfaction (4 scales): supported, effect concentrated at score 1.
 - 4.6 H5 travel: supported. 4.7 H6 job role (+ department): supported.
 - 4.8 H7 gender and education (control): no effect, as expected.
-- 4.9 correlation overview, with strongly correlated column pairs flagged for modelling.
+- 4.9 correlation overview, with strongly correlated column pairs listed.
 - 4.10 scorecard and the three themes (early-career risk, workload, dissatisfaction).
 - Chart legends moved outside the plot so they never cover bar labels; income
   histogram shows "% of group" instead of density.
@@ -84,8 +84,7 @@ Newest first.
   items from the original list are kept, grouped under the hypothesis they test;
   job role, work-life balance and education are added to complete H4, H6 and H7.
 - 4.1: one table with counts **and** percentages (was two separate prints); bars
-  labelled with count and %; finding added (16.1% baseline, class imbalance →
-  judge models on precision/recall/F1). Removed the stand-alone "Visualisation" heading.
+  labelled with count and %; finding added (16.1% baseline). Removed the stand-alone "Visualisation" heading.
 - The two age charts are moved under 4.4 (H3: tenure and age), marked as work in progress.
 
 ## 2026-11-25: Restructured sections 1–3
